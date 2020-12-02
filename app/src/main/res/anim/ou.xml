@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- 弹出时动画
+android:fromXScale="0"
+android:toXScale="1.0"
+代表从X轴的0坐标过度到1.0的x轴坐标
+视觉效果 从左弹出
+android:fillAfter="false"
+结束时停留在第一桢
+	-->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale 
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXScale="1"
+        android:toXScale="1.0"
+        android:fromYScale="0.5"
+        android:toYScale="1.0"
+        android:fillAfter="false"
+        android:duration="400"/>
+</set>

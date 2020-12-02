@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+    <translate
+        android:fromYDelta="50%p"
+        android:toYDelta="0" />
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="0.5" />
+</set>-->
+<!--android:fromXScale 起始的 X 方向上相对自身的缩放比例，浮点值，比如 1.0 代表自身无变化，0.5 代表起始时缩小一倍，2.0 代表放大一倍；
+android:toXScale 结尾的 X 方向上相对自身的缩放比例，浮点值；
+android:fromYScale 起始的 Y 方向上相对自身的缩放比例，浮点值，
+android:toYScale 结尾的 Y 方向上相对自身的缩放比例，浮点值；
+android:pivotX 缩放起点 X 轴坐标，可以是数值、百分数、百分数 p 三种样式，比如 50、50%、50%p，当为数值时，表示在当前 View 的左上角，即原点处加上 50px，做为起始缩放点；如果是 50%，表示在当前控件的左上角加上自己宽度的 50%做为起始点；如果是 50%p，那么就是表示在当前的左上角加上父控件宽度的 50%做为起始点 x 轴坐标。（具体意义，后面会举例演示）
+-->
+<!-- 退出时动画效果 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale 
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:fromXScale="1.0"
+        android:toXScale="1.0"
+        android:fromYScale="1.0"
+        android:toYScale="0.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fillAfter="false"
+        android:duration="400"/>
+</set>
