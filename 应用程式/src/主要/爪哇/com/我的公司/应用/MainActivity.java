@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				//获取Diloag所在的Window
 				Window window = alertDialog.getWindow();
 				//为Window设置动画
-				//赞未发现java实现
-
+				//设置Dialog透明度
+                                //window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 				window.setWindowAnimations(R.style.mDialog);
 				/*
 				wml设置弹窗透明度等，因为dialog是window实现
